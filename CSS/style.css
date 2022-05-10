@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #FEEFFE;
+}
+
+.top {
+    background-color: #FFF;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 15px 5px rgba(214, 205, 205, 0.6);
+    transition: 0.5s;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    margin-left: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    color: black;
+    margin-left: 5px;
+}
+
+.about h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu-btn {
+    color: black;
+    font-size: 30px;
+    margin-top: 6px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.sidebar {
+    background: white;
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+#menu-box {
+    display: none   ;
+}
+
+#menu-box:checked ~ aside .sidebar {
+    margin-left: -250px;
+}
+
+.theme-btn {
+    cursor: pointer;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.left {
+    display: flex;
+}
+
+.marks {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.marks img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    gap: 30px;
+    background-color: #333;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.bottom .icon {
+    width: 30px;
+    height: 30px;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.bottom a span {
+    margin-top: 20px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.slider-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.slider .cars{
+    width: 40%;
+    height: 30%;
+    border-radius: 20px;
+}
+
+.slider-1 .cars{
+    width: 40%;
+    height: 30%;
+    border-radius: 20px;
+}
+
+#slide1:checked ~ body {
+    color: whitesmoke;
+}
