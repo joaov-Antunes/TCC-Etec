@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -7,29 +7,38 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body.dark {
+    color: white;
+    background: black;
+}
+
 body {
-    background: #FEEFFE;
+    background: #d3d0d0;
+    transition: 0.5s;
+}
+
+
+.top.dark {
+    background-color: rgb(238, 16, 238);
+    color: #FFF;
 }
 
 .top {
-    background-color: #FFF;
+    background: #d6e9ee;
     width: 100vw;
     height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 5px 5px 15px 5px rgba(214, 205, 205, 0.6);
+    box-shadow: 5px 5px 15px 5px rgba(109, 106, 106, 0.6);
     transition: 0.5s;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: red;
-    margin-left: 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+   width: 50px;
+   height: 50px;
+   border-radius: 50px;
+   margin-left: 20px;
 }
 
 .logo span {
@@ -37,9 +46,23 @@ body {
     margin-left: 5px;
 }
 
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .about h1 {
     text-align: center;
     margin-top: 30px;
+}
+
+.about p {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .menu-btn {
@@ -48,18 +71,77 @@ body {
     margin-top: 6px;
     margin-left: 20px;
     cursor: pointer;
+    transition: 0.5s;
+}
+.menu-btn:hover {
+    color: #0099CC;
 }
 
+.sidebar.dark {
+    background-color: rgb(110, 110, 110);
+    color: #FFF;
+}
+
+.sidebar.dark a {
+    color: white;
+}
+
+.sidebar.dark a:hover {
+    background: rgb(238, 16, 238);
+}
+
+
 .sidebar {
-    background: white;
+    background: #FFF;
     position: fixed;
     width: 250px;
     height: 100vh;
     transition: 0.5s;
 }
 
+.side-title {
+    color: #0099CC;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.side-title span {
+    color: #FFED00;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    border-left: solid 5px;
+    background: #d6e9ee;
+    padding-left: 20px;
+}
+
+.navigation .icon {
+    width: 25px;
+    height: 25px;
+}
+
+.navigation .moon-icon {
+    position: fixed;
+    bottom: 15%;
+    width: 250px;
+}
+
 #menu-box {
-    display: none   ;
+    display: none;
 }
 
 #menu-box:checked ~ aside .sidebar {
@@ -71,6 +153,16 @@ body {
     margin-right: 20px;
     width: 30px;
     height: 30px;
+    transition: 0.5s;
+}
+
+#theme {
+    text-decoration: none;
+    color: black;
+}
+
+.theme-btn:hover {
+    color: #0099CC;
 }
 
 .left {
@@ -102,12 +194,9 @@ body {
     background-color: #333;
 }
 
-.bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+.bottom.dark {
+    color: #FFF;
+    background: #333;
 }
 
 .bottom .icon {
@@ -118,38 +207,9 @@ body {
 .bottom a {
     text-decoration: none;
     color: #FFF;
+    transition: 0.5s;
 }
 
-.bottom a span {
-    margin-top: 20px;
-}
-
-.slider {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.slider-1 {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.slider .cars{
-    width: 40%;
-    height: 30%;
-    border-radius: 20px;
-}
-
-.slider-1 .cars{
-    width: 40%;
-    height: 30%;
-    border-radius: 20px;
-}
-
-#slide1:checked ~ body {
-    color: whitesmoke;
+.bottom a:hover {
+    color: #0099CC;
 }
