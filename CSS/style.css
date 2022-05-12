@@ -15,11 +15,12 @@ body.dark {
 body {
     background: #d3d0d0;
     transition: 0.5s;
+    overflow: hidden;
 }
 
 
 .top.dark {
-    background-color: rgb(238, 16, 238);
+    background-color: #333;
     color: #FFF;
 }
 
@@ -63,6 +64,10 @@ body {
     text-align: justify;
     width: 50%;
     margin: 0 auto;
+}
+
+.menu-btn.dark {
+    color: #FFF;
 }
 
 .menu-btn {
@@ -148,6 +153,10 @@ body {
     margin-left: -250px;
 }
 
+.theme-btn.dark {
+    color: #FFF;
+}
+
 .theme-btn {
     cursor: pointer;
     margin-right: 20px;
@@ -213,3 +222,10 @@ body {
 .bottom a:hover {
     color: #0099CC;
 }
+
+.container {
+    height: 100%;
+}
+
+iframe {
+    height: 470px;
