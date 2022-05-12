@@ -83,7 +83,7 @@ body {
 }
 
 .sidebar.dark {
-    background-color: rgb(110, 110, 110);
+    background-color: #344;
     color: #FFF;
 }
 
@@ -98,7 +98,7 @@ body {
 
 .sidebar {
     background: #FFF;
-    position: fixed;
+    position: absolute;
     width: 250px;
     height: 100vh;
     transition: 0.5s;
@@ -224,8 +224,40 @@ body {
 }
 
 .container {
-    height: 100%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  gap: 50px;
+  margin-top: 20px;
+  background: #FFF;
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 10px 10px 10px 0px rgba(109, 106, 106, 0.6);
+  transition: 0.5s;
+}
+
+
+.container.dark {
+    background: #333;
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+}
+
+.map h1 {
+    text-align: center;
+    margin-top: 20px;
 }
 
 iframe {
-    height: 470px;
+    height: 350px;
+    width: 500px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+iframe.dark {
+    filter: invert(100%);
+}
