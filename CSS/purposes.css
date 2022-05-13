@@ -52,25 +52,6 @@ li {
     margin-left: 5px;
 }
 
-.about {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.about h1 {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.about p {
-    font-weight: 400;
-    font-size: 18px;
-    text-align: justify;
-    width: 50%;
-    margin: 0 auto;
-}
-
 .menu-btn.dark {
     color: #FFF;
 }
@@ -198,9 +179,9 @@ li {
 .bottom {
     display: flex;
     align-items: center;
-    justify-content: center;
-    bottom: 0;
     position: fixed;
+    bottom: 0;
+    justify-content: center;
     width: 100vw;
     height: 80px;
     gap: 30px;
@@ -271,45 +252,26 @@ li {
     filter: invert(100%);
 }
 
-.yt-card {
-    height: 350px;
-    width: 500px;
-    border-radius: 10px;
-    margin: 0 auto;
-    transition: 0.5s;
-}
-
-.map-card.dark {
-    filter: invert(100%);
-}
-
-.container.dark {
-    background: #333;
-}
-
 @media(max-width: 500px) {
-    .yt-card{
-        width: 450px;
-    }
     .container {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
         align-items: center;
-        gap: 10px;
         margin-top: 20px;
         background: #FFF;
         border-radius: 10px;
         width: 90%;
+        height: 50vh;
     }
     .map-card {
         width: 100%;
     }
-    li {
+    .container .ongs a {
         margin: 0 auto;
         font-size: 10px;
+        line-height: normal;
     }
-    
 }
 
 @media(max-width: 816px) {
